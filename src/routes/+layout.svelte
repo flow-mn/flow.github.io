@@ -3,6 +3,7 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 	import type { Snippet } from 'svelte';
 	import '../app.css';
+	import Footer from '../lib/components/Footer.svelte';
 	let { children }: { children: Snippet } = $props();
 </script>
 
@@ -12,20 +13,17 @@
 		{@render children()}
 	</main>
 </Frame>
+<Footer />
 
 <style>
 	main {
 		display: flex;
 		flex-direction: column;
 
-		max-width: 1280px;
+		width: 100%;
 
 		margin-top: var(--navbar-height, 0px);
-	}
 
-	@media only screen and (max-width: 1280px) {
-		main {
-			padding: 0 1rem;
-		}
+		padding: 2rem 0 2rem 0;
 	}
 </style>
