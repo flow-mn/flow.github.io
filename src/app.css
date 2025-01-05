@@ -24,12 +24,12 @@
 html,
 body {
 	min-height: 100vh;
-	height: 100vh;
 
 	width: 100vw;
 	max-width: 100vw;
 
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 a {
@@ -49,7 +49,7 @@ img:not(.draggable) {
 }
 
 [data-no-bullet] li {
-	list-style: none;
+	list-style: none !important;
 }
 
 li {

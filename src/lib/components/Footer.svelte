@@ -8,16 +8,6 @@
 			<ul class="parent" data-no-bullet>
 				<li>
 					<ul>
-						<li>
-							<img alt="Flow logo" src="/flow.svg" height="64" />
-						</li>
-						<li>
-							<span>Flow - A free and open-source personal finance tracker</span>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
 						<li class="header">Community</li>
 						<li>
 							<a href="https://github.com/flow-mn/flow" target="_blank">Visit GitHub</a>
@@ -53,10 +43,11 @@
 							>
 						</li>
 						<li>
-							<a href="https://ko-fi.com/sadespresso" target="_blank">Support Flow</a>
+							<a href="/donate">Support Flow</a>
 						</li>
 					</ul>
-					<div class="spacer"></div>
+				</li>
+				<li>
 					<ul>
 						<li class="header">Contact</li>
 						<li>
@@ -85,6 +76,8 @@
 	footer {
 		width: 100vw;
 		padding: 4rem 0;
+
+		box-shadow: 0 -1px 6px 0px rgba(255, 255, 255, 0.1);
 	}
 
 	li.header {
@@ -99,10 +92,6 @@
 		row-gap: 4rem;
 	}
 
-	.spacer {
-		height: 2rem;
-	}
-
 	@media only screen and (max-width: 1280px) {
 		.parent {
 			grid-template-columns: repeat(3, 1fr);
@@ -111,16 +100,13 @@
 
 	@media only screen and (max-width: 768px) {
 		footer {
-			padding: 2rem;
+			padding: 2rem 0;
 		}
 
 		.parent {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
-		}
-
-		.spacer {
-			height: 4rem;
+			gap: 1.5rem;
 		}
 	}
 </style>

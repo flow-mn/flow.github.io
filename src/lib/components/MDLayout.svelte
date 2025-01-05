@@ -4,9 +4,15 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-{@render children()}
+<div class="content">
+	{@render children()}
+</div>
 
 <style>
+	.content {
+		height: max-content;
+	}
+
 	:global(h1):not(:first-child),
 	:global(h2):not(:first-child),
 	:global(h3):not(:first-child),
@@ -31,7 +37,7 @@
 		list-style-type: none;
 	}
 
-	:global(li)::before {
+	:global(li:not([data-no-bullet] li))::before {
 		content: '- ';
 	}
 </style>

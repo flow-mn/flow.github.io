@@ -1,22 +1,33 @@
 <script>
 	import Frame from './Frame.svelte';
 	import GitHubOctocat from './GitHubOctocat.svelte';
+	import { afterNavigate } from '$app/navigation';
+
+	let path = $state(window.location.pathname);
+
+	afterNavigate(() => {
+		path = window.location.pathname;
+	});
 </script>
 
 <nav>
 	<Frame>
 		<ul>
 			<li>
-				<a href="/">
+				<a href="/" class="ir">
 					<img src="/flow.svg" alt="Flow logo" height="48" />
+					<span class="title">
+						&nbsp;
+						<b class:active={path === '/'}>Flow</b>
+					</span>
 				</a>
 			</li>
 			<li class="spacer"></li>
 			<li>
-				<a href="https://ko-fi.com/sadespresso" target="_blank">Donate</a>
+				<a href="/donate" class:active={path === '/donate'}>Donate 🤍</a>
 			</li>
 			<li>
-				<a href="/faq">FAQ</a>
+				<a href="/faq" class:active={path === '/faq'}>FAQ</a>
 			</li>
 			<li>
 				<a href="https://github.com/flow-mn/flow" target="_blank" class="ir">
@@ -39,6 +50,8 @@
 		left: 0;
 		right: 0;
 		background: var(--background);
+
+		box-shadow: 0 1px 6px 0px rgba(255, 255, 255, 0.1);
 	}
 
 	ul {
@@ -62,9 +75,27 @@
 		content: '' !important;
 	}
 
+	a,
+	a:visited {
+		color: var(--text);
+	}
+
+	a:hover,
+	a:focus-visible {
+		color: var(--primary);
+	}
+
+	.title {
+		font-size: larger;
+	}
+
 	.spacer {
 		width: 100%;
 		flex: 1 1 0;
+	}
+
+	.active {
+		color: var(--primary) !important;
 	}
 
 	.ir {

@@ -31,8 +31,7 @@
 	}
 
 	.fullHeight {
-		min-height: 100vh;
-		height: 100vh;
+		min-height: 80vh;
 	}
 
 	@media only screen and (max-width: 1280px) {
