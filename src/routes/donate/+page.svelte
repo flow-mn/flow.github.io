@@ -4,10 +4,11 @@
 </p>
 
 <div class="col">
-	<h4>Ko-fi:</h4>
-	<a href="https://ko-fi.com/sadespresso" target="_blank">
-		<img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png" alt="Ko-fi logo" />
-		<span>Buy me a coffee</span>
+	<h4>Buy me a coffee:</h4>
+	<a target="_blank" href="https://www.buymeacoffee.com/sadespresso">
+		<img
+			src="https://img.buymeacoffee.com/button-api/?text=Buy me an iced mocha&emoji=&slug=sadespresso&button_colour=BD5FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"
+		/>
 	</a>
 	<h4>Skrill:</h4>
 	<span> batmend@gege.mn </span>
@@ -22,9 +23,5 @@
 	.col {
 		display: flex;
 		flex-direction: column;
-	}
-
-	img {
-		height: 1em;
 	}
 </style>
