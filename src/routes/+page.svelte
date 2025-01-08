@@ -17,7 +17,10 @@
 		>
 	</li>
 	<li>
-		<a href="https://testflight.apple.com/join/NH4ifijS" target="_blank">TestFlight (beta)</a>
+		<a
+			href="https://apps.apple.com/mn/app/flow-expense-tracker/id6477741670?utm_source=web"
+			target="_blank">App Store</a
+		>
 	</li>
 </ul>
 

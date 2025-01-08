@@ -9,8 +9,7 @@ you are in control of your data.
 
 You can download Flow from:
 
-- App Store (to be released soon)
-- [TestFlight](https://testflight.apple.com/join/NH4ifijS) (iOS/macOS testing platform)
+- [App Store](https://apps.apple.com/mn/app/flow-expense-tracker/id6477741670?utm_source=web)
 - [Google Play Store](https://play.google.com/store/apps/details?id=mn.flow.flow)
 
 ## Can I export all of my data?
