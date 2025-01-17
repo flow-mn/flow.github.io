@@ -55,3 +55,9 @@ img:not(.draggable) {
 li {
 	list-style-position: inside;
 }
+
+@media (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+}

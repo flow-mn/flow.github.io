@@ -2,6 +2,7 @@
 	import Frame from './Frame.svelte';
 	import GitHubOctocat from './GitHubOctocat.svelte';
 	import { afterNavigate } from '$app/navigation';
+	import Logo from './Logo.svelte';
 
 	let path = $state(window.location.pathname);
 
@@ -15,11 +16,7 @@
 		<ul>
 			<li>
 				<a href="/" class="ir">
-					<img src="/flow.svg" alt="Flow logo" height="48" />
-					<span class="title">
-						&nbsp;
-						<b class:active={path === '/'}>Flow</b>
-					</span>
+					<Logo background="transparent" fill="var(--primary)" />
 				</a>
 			</li>
 			<li class="spacer"></li>
@@ -32,7 +29,7 @@
 			<li>
 				<a href="https://github.com/flow-mn/flow" target="_blank" class="ir">
 					<GitHubOctocat />
-					<span>GitHub</span>
+					<span class="hide-mobile">GitHub</span>
 				</a>
 			</li>
 		</ul>
@@ -83,10 +80,6 @@
 	a:hover,
 	a:focus-visible {
 		color: var(--primary);
-	}
-
-	.title {
-		font-size: larger;
 	}
 
 	.spacer {

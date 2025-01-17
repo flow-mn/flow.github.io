@@ -6,7 +6,7 @@
 	<Frame>
 		<div class="col">
 			<ul class="parent" data-no-bullet>
-				<li>
+				<li data-aos="fade-right" data-aos-delay="200">
 					<ul>
 						<li class="header">Community</li>
 						<li>
@@ -20,7 +20,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li data-aos="fade-right" data-aos-delay="400">
 					<ul>
 						<li class="header">Support</li>
 						<li>
@@ -34,7 +34,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li data-aos="fade-right" data-aos-delay="600">
 					<ul>
 						<li class="header">Contribute</li>
 						<li>
@@ -47,7 +47,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li data-aos="fade-right" data-aos-delay="800">
 					<ul>
 						<li class="header">Contact</li>
 						<li>
