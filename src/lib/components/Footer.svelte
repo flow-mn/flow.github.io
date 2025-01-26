@@ -2,10 +2,13 @@
 	import Frame from './Frame.svelte';
 </script>
 
-<footer>
+<footer class="w-screen py-8 md:py-16">
 	<Frame>
-		<div class="col">
-			<ul class="parent" data-no-bullet>
+		<div class="flex flex-col gap-8">
+			<ul
+				class="grid grid-cols-1 gap-x-40 gap-y-6 md:grid-cols-3 md:gap-y-16 xl:grid-cols-4"
+				data-no-bullet
+			>
 				<li data-aos="fade-right" data-aos-delay="200">
 					<ul>
 						<li class="header">Community</li>
@@ -43,7 +46,7 @@
 							>
 						</li>
 						<li>
-							<a href="/donate">Support Flow</a>
+							<a href="https://buymeacoffee.com/sadespresso" target="_blank">Buy me a coffee</a>
 						</li>
 					</ul>
 				</li>
@@ -67,46 +70,12 @@
 </footer>
 
 <style>
-	.col {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
 	footer {
-		width: 100vw;
-		padding: 4rem 0;
-
 		box-shadow: 0 -1px 6px 0px rgba(255, 255, 255, 0.1);
 	}
 
 	li.header {
 		opacity: 0.6;
-		margin-bottom: 0.5rem;
-	}
-
-	.parent {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 10rem;
-		row-gap: 4rem;
-	}
-
-	@media only screen and (max-width: 1280px) {
-		.parent {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
-
-	@media only screen and (max-width: 768px) {
-		footer {
-			padding: 2rem 0;
-		}
-
-		.parent {
-			display: grid;
-			grid-template-columns: repeat(1, 1fr);
-			gap: 1.5rem;
-		}
+		@apply mb-2;
 	}
 </style>

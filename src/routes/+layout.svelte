@@ -14,7 +14,7 @@
 
 <NavBar />
 <Frame fullHeight>
-	<main>
+	<main class="flex w-full flex-col pb-16 pt-8">
 		{@render children()}
 	</main>
 </Frame>
@@ -22,13 +22,6 @@
 
 <style>
 	main {
-		display: flex;
-		flex-direction: column;
-
-		width: 100%;
-
 		margin-top: var(--navbar-height, 0px);
-
-		padding: 2rem 0 4rem 0;
 	}
 </style>

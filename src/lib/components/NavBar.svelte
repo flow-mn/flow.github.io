@@ -29,7 +29,7 @@
 			<li>
 				<a href="https://github.com/flow-mn/flow" target="_blank" class="ir">
 					<GitHubOctocat />
-					<span class="hide-mobile">GitHub</span>
+					<span class="hidden md:block">GitHub</span>
 				</a>
 			</li>
 		</ul>

@@ -1,9 +1,9 @@
-<p>
+<p class="mb-8 max-w-prose">
 	Flow is a totally free project, and is unlikely to change in the future. As Flow doesn't generate
 	any revenue, it'd mean so much to support the project 🤩
 </p>
 
-<div class="col">
+<div class="flex flex-col">
 	<h4>Buy me a coffee:</h4>
 	<a aria-label="Buy me a coffee" target="_blank" href="https://www.buymeacoffee.com/sadespresso">
 		<img
@@ -14,15 +14,3 @@
 	<h4>Skrill:</h4>
 	<span> batmend@gege.mn </span>
 </div>
-
-<style>
-	p {
-		max-width: 80ch;
-		margin-bottom: 2rem;
-	}
-
-	.col {
-		display: flex;
-		flex-direction: column;
-	}
-</style>
