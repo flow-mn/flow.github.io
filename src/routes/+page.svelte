@@ -1,6 +1,11 @@
 <script>
 	import DiscordLogo from '$lib/components/DiscordLogo.svelte';
+	import FlexDownloadButtons from '$lib/components/FlexDownloadButtons.svelte';
 </script>
+
+<svelte:head>
+	<title>Flow - FOSS expense tracker</title>
+</svelte:head>
 
 <section class="flex flex-col items-center gap-10">
 	<div class="h-20"></div>
@@ -19,24 +24,7 @@
 		Join Discord for updates
 	</a>
 
-	<div class="flex flex-col items-center justify-center gap-4 sm:flex-row md:gap-6">
-		<a
-			href="https://play.google.com/store/apps/details?id=mn.flow.flow&utm_source=web"
-			target="_blank"
-			aria-label="Google Play Store"
-			data-aos="fade-right"
-		>
-			<img src="/googleplaystore.svg" alt="Google Play Store Download Button" />
-		</a>
-		<a
-			href="https://apps.apple.com/mn/app/flow-expense-tracker/id6477741670?utm_source=web"
-			target="_blank"
-			aria-label="App Store"
-			data-aos="fade-right"
-		>
-			<img src="/appstore.svg" alt="App Store Download Button" />
-		</a>
-	</div>
+	<FlexDownloadButtons />
 
 	<div class="h-20"></div>
 

@@ -11,7 +11,7 @@
 	});
 </script>
 
-<nav class="fixed left-0 right-0 top-0 bg-background shadow-sm">
+<nav class="fixed left-0 right-0 top-0 z-50 bg-background shadow-sm">
 	<Frame>
 		<ul class="flex h-[var(--navbar-height,4rem)] w-full flex-row items-center gap-8 font-semibold">
 			<li>
@@ -27,7 +27,11 @@
 				<a href="/faq" class:active={path === '/faq'}>FAQ</a>
 			</li>
 			<li>
-				<a href="https://github.com/flow-mn/flow" target="_blank" class="ir">
+				<a
+					href="https://github.com/flow-mn/flow"
+					target="_blank"
+					class="inline-flex flex-row items-center gap-2"
+				>
 					<GitHubOctocat />
 					<span class="hidden md:block">GitHub</span>
 				</a>

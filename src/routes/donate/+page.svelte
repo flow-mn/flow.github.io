@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Donate Flow</title>
+</svelte:head>
+
 <p class="mb-8 max-w-prose">
 	Flow is a totally free project, and will stay that way. As Flow doesn't generate any revenue, it'd
 	mean so much to support the project 🤩
