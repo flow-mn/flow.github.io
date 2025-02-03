@@ -1,18 +1,19 @@
 <script>
-	import Card from '../lib/components/Card.svelte';
-	import DiscordLogo from '../lib/components/DiscordLogo.svelte';
+	import DiscordLogo from '$lib/components/DiscordLogo.svelte';
 </script>
 
 <section class="flex flex-col items-center gap-10">
 	<div class="h-20"></div>
 
-	<div data-aos="fade-right" class="text-3xl font-semibold">Start tracking your finances.</div>
+	<div data-aos="fade-right" class="text-3xl font-semibold max-md:text-center">
+		Start tracking your finances.
+	</div>
 
 	<a
 		data-aos="fade-right"
 		href="https://discord.gg/Ndh9VDeZa4"
 		target="_blank"
-		class="inline-block w-fit rounded-lg bg-primary px-3 py-2 text-lg font-semibold text-background"
+		class="inline-block w-fit rounded-lg bg-primary px-3 py-2 text-lg font-semibold text-background visited:text-background"
 	>
 		<DiscordLogo></DiscordLogo>
 		Join Discord for updates

@@ -10,23 +10,16 @@
 	let { children, fullHeight = false, padMobile = true }: $Props = $props();
 </script>
 
-<div>
+<div class="flex w-screen flex-row justify-center overflow-x-hidden">
 	<section class:fullHeight class:padMobile>
 		{@render children()}
 	</section>
 </div>
 
 <style>
-	div {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 100vw;
-		overflow-x: hidden;
-	}
-
 	section {
 		max-width: 1280px;
+		max-width: min(1280px, 100vw);
 		width: 100%;
 	}
 

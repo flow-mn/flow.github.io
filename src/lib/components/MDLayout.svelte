@@ -4,15 +4,11 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<div class="content">
+<div class="h-max">
 	{@render children()}
 </div>
 
 <style>
-	.content {
-		height: max-content;
-	}
-
 	:global(h1):not(:first-child),
 	:global(h2):not(:first-child),
 	:global(h3):not(:first-child),

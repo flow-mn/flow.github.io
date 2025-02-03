@@ -4,15 +4,7 @@
 @import 'tailwindcss/utilities';
 
 :root {
-	--background: #141414;
-	--primary: #f2c0ff;
-	--secondary: #050505;
-	--onSecondary: #f5f6fa;
-	--rose: #ff4040;
-	--text: #f5f6fa;
-
-	background-color: var(--background);
-	color: var(--text);
+	@apply bg-background text-text;
 
 	font-size: 16px;
 	font-family: Poppins, Montserrat, 'Segoe UI', Helvetica, 'Noto Sans Mongolian', sans-serif;
@@ -36,13 +28,15 @@ body {
 }
 
 a {
+	@apply text-primary;
+
 	text-decoration: none;
-	color: var(--primary);
 	font-weight: medium;
 }
 
 a:visited {
-	color: var(--primary);
+	@apply text-primary;
+	
 	font-weight: medium;
 }
 

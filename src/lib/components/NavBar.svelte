@@ -11,12 +11,12 @@
 	});
 </script>
 
-<nav>
+<nav class="fixed left-0 right-0 top-0 bg-background shadow-sm">
 	<Frame>
-		<ul>
+		<ul class="flex h-[var(--navbar-height,4rem)] w-full flex-row items-center gap-8 font-semibold">
 			<li>
-				<a href="/" class="ir">
-					<Logo background="transparent" fill="var(--primary)" />
+				<a href="/" class="inline-flex flex-row items-center gap-1.5">
+					<Logo background="transparent" />
 				</a>
 			</li>
 			<li class="spacer"></li>
@@ -41,28 +41,6 @@
 		--navbar-height: 4rem;
 	}
 
-	nav {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		background: var(--background);
-
-		box-shadow: 0 1px 6px 0px rgba(255, 255, 255, 0.1);
-	}
-
-	ul {
-		height: var(--navbar-height);
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-
-		font-weight: 600;
-
-		gap: 2rem;
-	}
-
 	ul,
 	li {
 		list-style: none;
@@ -74,12 +52,12 @@
 
 	a,
 	a:visited {
-		color: var(--text);
+		@apply text-text;
 	}
 
 	a:hover,
 	a:focus-visible {
-		color: var(--primary);
+		@apply text-primary;
 	}
 
 	.spacer {
@@ -88,14 +66,7 @@
 	}
 
 	.active {
-		color: var(--primary) !important;
-	}
-
-	.ir {
-		display: inline-flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 6px;
+		@apply !text-primary;
 	}
 
 	@media only screen and (max-width: 768px) {

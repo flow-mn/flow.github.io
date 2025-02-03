@@ -1,11 +1,11 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
 	import Frame from '$lib/components/Frame.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 	import type { Snippet } from 'svelte';
 	import '../app.css';
-	import Footer from '../lib/components/Footer.svelte';
 
 	AOS.init();
 

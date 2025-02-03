@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from './Footer/Header.svelte';
 	import Frame from './Frame.svelte';
 </script>
 
@@ -11,7 +12,7 @@
 			>
 				<li data-aos="fade-right" data-aos-delay="200">
 					<ul>
-						<li class="header">Community</li>
+						<Header>Community</Header>
 						<li>
 							<a href="https://github.com/flow-mn/flow" target="_blank">Visit GitHub</a>
 						</li>
@@ -25,7 +26,7 @@
 				</li>
 				<li data-aos="fade-right" data-aos-delay="400">
 					<ul>
-						<li class="header">Support</li>
+						<Header>Support</Header>
 						<li>
 							<a href="/faq">FAQ</a>
 						</li>
@@ -39,7 +40,7 @@
 				</li>
 				<li data-aos="fade-right" data-aos-delay="600">
 					<ul>
-						<li class="header">Contribute</li>
+						<Header>Contribute</Header>
 						<li>
 							<a href="https://github.com/flow-mn/flow/issues/new" target="_blank"
 								>Report an issue</a
@@ -52,7 +53,7 @@
 				</li>
 				<li data-aos="fade-right" data-aos-delay="800">
 					<ul>
-						<li class="header">Contact</li>
+						<Header>Contact</Header>
 						<li>
 							<a href="mailto:flow@gege.mn" target="_blank">flow@gege.mn</a>
 						</li>
@@ -72,10 +73,5 @@
 <style>
 	footer {
 		box-shadow: 0 -1px 6px 0px rgba(255, 255, 255, 0.1);
-	}
-
-	li.header {
-		opacity: 0.6;
-		@apply mb-2;
 	}
 </style>
