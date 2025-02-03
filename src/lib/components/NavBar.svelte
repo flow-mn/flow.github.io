@@ -16,7 +16,7 @@
 		<ul class="flex h-[var(--navbar-height,4rem)] w-full flex-row items-center gap-8 font-semibold">
 			<li>
 				<a href="/" class="inline-flex flex-row items-center gap-1.5">
-					<Logo background="transparent" />
+					<Logo />
 				</a>
 			</li>
 			<li class="spacer"></li>
