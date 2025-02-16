@@ -1,3 +1,7 @@
+<script>
+	import copyBankAccountNumber from '$lib/copyBankAccNo';
+</script>
+
 <svelte:head>
 	<title>Donate Flow</title>
 </svelte:head>
@@ -20,5 +24,13 @@
 	<div class="flex flex-col gap-0">
 		<h4>Skrill:</h4>
 		<span>batmend@gege.mn</span>
+	</div>
+	<div class="flex flex-col gap-0">
+		<h4>Golomt Bank of Mongolia:</h4>
+		<div>
+			<button onclick={copyBankAccountNumber} class="appearance-none font-bold">
+				1105415662
+			</button> (Batmend Ganbaatar)
+		</div>
 	</div>
 </div>

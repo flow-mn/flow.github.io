@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FlexDownloadButtons from '$lib/components/FlexDownloadButtons.svelte';
 	import DocHeader from '$lib/components/DocHeader.svelte';
+	import copyBankAccountNumber from '$lib/copyBankAccNo';
 </script>
 
 <svelte:head>
@@ -13,6 +14,16 @@
 			<a href="https://buymeacoffee.com/sadespresso">Buy me a coffee</a>
 		</li>
 		<li>Skrill: batmend@gege.mn</li>
+		<li>
+			Golomt Bank (of Mongolia): <button
+				class="appearance-none font-bold"
+				type="button"
+				title="Click to copy my Golomt Bank of Mongolia account number"
+				onclick={copyBankAccountNumber}
+			>
+				1105415662
+			</button> (Batmend Ganbaatar)
+		</li>
 	</ul>
 {/snippet}
 
@@ -42,6 +53,24 @@
 			recoverable like JSON/ZIP backups.
 		</p>
 
+		<DocHeader id="importing-erased-my-data-how-to-recover">
+			Importing erased my data, how to recover?
+		</DocHeader>
+
+		<p>
+			Flow does a precaution backup before starting to import. You can find the backup in <b
+				>Profile tab &gt; Backup &gt; Backup history</b
+			>.
+		</p>
+		<br />
+		<ul class="list-inside list-disc">
+			<li>Please note that the precaution isn't guaranteed to succeed</li>
+			<li>
+				Also iOS clears the temporary storage periodically, so you may find the backup file deleted
+				if too much time has passed.
+			</li>
+		</ul>
+
 		<DocHeader id="does-flow-have-online-sync">Does Flow have online sync?</DocHeader>
 
 		<p>
@@ -68,6 +97,8 @@
 
 		<p>
 			Yes. Flow can generate reports, summaries involving accounts with different currency.
+			<br />
+			Reports are always displayed in your primary currency.
 			<br />
 			<span class="opacity-60">Cross-currency transfers are not available at the moment.</span>
 		</p>
