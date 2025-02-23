@@ -49,6 +49,9 @@
 						<li>
 							<a href="https://buymeacoffee.com/sadespresso" target="_blank">Buy me a coffee</a>
 						</li>
+						<li>
+							<a href="https://github.com/sponsors/flow-mn" target="_blank">Sponsor on GitHub</a>
+						</li>
 					</ul>
 				</li>
 				<li data-aos="fade-right" data-aos-delay="800">

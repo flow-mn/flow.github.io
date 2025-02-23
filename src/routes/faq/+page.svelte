@@ -13,12 +13,22 @@
 		<li>
 			<a href="https://buymeacoffee.com/sadespresso">Buy me a coffee</a>
 		</li>
-		<li>Skrill: batmend@gege.mn</li>
+		<li>Skrill<br />batmend@gege.mn</li>
 		<li>
-			Golomt Bank (of Mongolia): <button
+			Sponsor on GitHub: <iframe
+				src="https://github.com/sponsors/flow-mn/button"
+				title="Sponsor flow-mn"
+				height="32"
+				width="114"
+				style="border: 0; border-radius: 6px;"
+			></iframe>
+		</li>
+		<li>
+			Golomt Bank (of Mongolia)<br />
+			<button
 				class="appearance-none font-bold"
 				type="button"
-				title="Click to copy my Golomt Bank of Mongolia account number"
+				title="Click to copy my Golomt Bank (Mongolia) account number"
 				onclick={copyBankAccountNumber}
 			>
 				1105415662

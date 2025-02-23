@@ -21,6 +21,16 @@
 			/>
 		</a>
 	</div>
+	<div class="flex flex-col gap-2">
+		<h4>Sponsor on GitHub:</h4>
+		<iframe
+			src="https://github.com/sponsors/flow-mn/card"
+			title="Sponsor flow-mn"
+			height="120"
+			width="600"
+			style="border: 0;"
+		></iframe>
+	</div>
 	<div class="flex flex-col gap-0">
 		<h4>Skrill:</h4>
 		<span>batmend@gege.mn</span>
