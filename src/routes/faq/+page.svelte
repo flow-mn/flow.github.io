@@ -117,10 +117,7 @@
 			Can I make transfers between different currency accounts?
 		</DocHeader>
 
-		<p>
-			No, at the moment, it's not possible. This feature is planned, and is expected to be out in
-			the near future.
-		</p>
+		<p>Yes. Required Flow version beta 0.13.0 or later</p>
 
 		<DocHeader id="is-flow-free">Is Flow free?</DocHeader>
 
