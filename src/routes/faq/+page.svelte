@@ -110,14 +110,16 @@
 			<br />
 			Reports are always displayed in your primary currency.
 			<br />
-			<span class="opacity-60">Cross-currency transfers are not available at the moment.</span>
+			<span class="opacity-60"
+				>Cross-currency transfers are available on version 0.13.0 and later</span
+			>
 		</p>
 
 		<DocHeader id="can-i-make-transfers-between-different-currency-accounts">
 			Can I make transfers between different currency accounts?
 		</DocHeader>
 
-		<p>Yes. Required Flow version beta 0.13.0 or later</p>
+		<p>Yes. Requires Flow version 0.13.0 or later</p>
 
 		<DocHeader id="is-flow-free">Is Flow free?</DocHeader>
 
