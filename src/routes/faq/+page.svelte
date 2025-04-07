@@ -1,6 +1,6 @@
 <script lang="ts">
-	import FlexDownloadButtons from '$lib/components/FlexDownloadButtons.svelte';
 	import DocHeader from '$lib/components/DocHeader.svelte';
+	import FlexDownloadButtons from '$lib/components/FlexDownloadButtons.svelte';
 	import copyBankAccountNumber from '$lib/copyBankAccNo';
 </script>
 
@@ -13,7 +13,6 @@
 		<li>
 			<a href="https://buymeacoffee.com/sadespresso">Buy me a coffee</a>
 		</li>
-		<li>Skrill<br />batmend@gege.mn</li>
 		<li>
 			Sponsor on GitHub: <iframe
 				src="https://github.com/sponsors/flow-mn/button"
@@ -28,10 +27,10 @@
 			<button
 				class="appearance-none font-bold"
 				type="button"
-				title="Click to copy my Golomt Bank (Mongolia) account number"
+				title="Click to copy IBAN"
 				onclick={copyBankAccountNumber}
 			>
-				1105415662
+				MN17 0015 0011 0541 5662
 			</button> (Batmend Ganbaatar)
 		</li>
 	</ul>
@@ -84,24 +83,35 @@
 		<DocHeader id="does-flow-have-online-sync">Does Flow have online sync?</DocHeader>
 
 		<p>
-			No. It's planned, and is likely to take quite some time. In the meantime, I recommend doing
-			periodic backups to avoid data loss.
+			If you have Flow 0.14.0 or later on iOS, iPadOS, or macOS, you can use iCloud. This required iCloud Drive sync to
+			be enabled on your device. This feature does not support multiple devices syncing. Flow will attempt to save your
+			manual backups to your iCloud Drive too.
+
+			<br />
+
+			If you have Android, Windows, or Linux, it's not available at the moment. It's planned, and may take some time to
+			be ready for use. I recommend doing periodic backups to avoid data loss.
 		</p>
 
-		<DocHeader id="will-flow-have-online-sync">Will Flow have online sync?</DocHeader>
+		<DocHeader id="why-icloud-sync-isnt-working">Why iCloud sync isn't working?</DocHeader>
 
-		<p>
-			Yes, it will. It's likely to take quite some time. In the meantime, I recommend doing periodic
-			backups to avoid data loss.
-		</p>
+		<ul class="list-inside list-disc">
+			<li>Ensure you've logged into your Apple Account on your device (in System Settings, not on Flow)</li>
+			<li>Ensure you've enabled iCloud Drive sync in System Settings &gt; Apple Account &gt; iCloud &gt; iCloud Drive &gt; Sync this iPhone (or your device's name)</li>
+			<li>Ensure you've allowed Flow to access iCloud inSystem Settings &gt; Apple Account &gt; iCloud &gt; iCloud Drive &gt; Apps Syncing to iCloud Drive</li>
+			<li>Flow refuses to upload the backup if it's older than the current file on iCloud. You may want to check your device's date and time settings.</li>
+		</ul>
 
 		<DocHeader id="does-flow-work-offline">Does Flow work offline?</DocHeader>
 
 		<p>
-			Yes, Flow doesn't require internet except for gather exchange rates data.
-			<br />
-			Flow doesn't need exchange rates if you use only one currency.
+			Yes, but there are some occurances where Flow might use internet connection. Here are few examples:
 		</p>
+		<br/>
+		<ul class="list-inside list-disc">
+			<li>Downloading exchange rates information (only if you use more than one currencies)</li>
+			<li>Clicking on buttons that lead to external internet resource (Discord, GitHub, etc.)</li>
+		</ul>
 
 		<DocHeader id="does-flow-support-multi-currency">Does Flow support multi-currency</DocHeader>
 
@@ -161,7 +171,22 @@
 
 		<DocHeader id="can-i-add-recurring-transactions">Can I add recurring transactions?</DocHeader>
 
-		<p>No, not at the moment, but it's planned.</p>
+		<p>Recurring transactions feature is available on Flow 0.14.0 or later.</p>
+
+		<DocHeader id="how-does-icloud-sync-work">How does iCloud sync work?</DocHeader>
+
+		<p>
+			This section is not specific to Flow.<br/><br />
+
+			TL;DR Flow saves to iCloud, and the operating system uploads the file. This process cannot be sped up, or altered.<br /><br />
+
+			Enabling iCloud sync on Flow will not immediately upload the data to iCloud. The operating system decides when it gets
+			uploaded, and the decision is affected by many factors, including network connection, battery level, time of the day,
+			and so on. This is not official Apple documentation, so you should refer to Apple's documentation for more accurate
+			information.<br /><br />
+
+			Interestingly enough, you don't need an internet connection for Flow to save to iCloud.
+		</p>
 
 		<DocHeader id="how-do-i-contact-the-maintainer">How do I contact the maintainer?</DocHeader>
 
