@@ -81,24 +81,33 @@
 		</ul>
 
 		<DocHeader id="does-flow-have-online-sync">Does Flow have online sync?</DocHeader>
-
-		<p>
-			If you have Flow 0.14.0 or later on iOS, iPadOS, or macOS, you can use iCloud. This required iCloud Drive sync to
-			be enabled on your device. This feature does not support multiple devices syncing. Flow will attempt to save your
-			manual backups to your iCloud Drive too.
-
-			<br />
-
-			If you have Android, Windows, or Linux, it's not available at the moment. It's planned, and may take some time to
-			be ready for use. I recommend doing periodic backups to avoid data loss.
-		</p>
+		<details open>
+			<summary>
+				For users on Android, Windows, or Linux
+			</summary>
+			<p>
+				It's not available at the moment. It's planned, and may take some time to
+				be ready for use. I recommend doing periodic backups to avoid data loss.
+			</p>
+		</details>
+		<br />	
+		<details open>
+			<summary>
+				For users on iOS, or macOS
+			</summary>
+			<p>
+				If you have Flow 0.14.0 or later on iOS, iPadOS, or macOS, you can use iCloud. This required iCloud Drive sync
+				to be enabled on your device. This feature does not support multiple devices syncing. Flow will attempt to save
+				your manual backups to your iCloud Drive too.
+			</p>
+		</details>
 
 		<DocHeader id="why-icloud-sync-isnt-working">Why iCloud sync isn't working?</DocHeader>
 
 		<ul class="list-inside list-disc">
 			<li>Ensure you've logged into your Apple Account on your device (in System Settings, not on Flow)</li>
 			<li>Ensure you've enabled iCloud Drive sync in System Settings &gt; Apple Account &gt; iCloud &gt; iCloud Drive &gt; Sync this iPhone (or your device's name)</li>
-			<li>Ensure you've allowed Flow to access iCloud inSystem Settings &gt; Apple Account &gt; iCloud &gt; iCloud Drive &gt; Apps Syncing to iCloud Drive</li>
+			<li>Ensure you've allowed Flow to access iCloud in System Settings &gt; Apple Account &gt; iCloud &gt; iCloud Drive &gt; Apps Syncing to iCloud Drive</li>
 			<li>Flow refuses to upload the backup if it's older than the current file on iCloud. You may want to check your device's date and time settings.</li>
 		</ul>
 
