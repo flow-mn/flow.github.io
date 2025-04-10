@@ -4,69 +4,69 @@
 @import 'tailwindcss/utilities';
 
 :root {
-	@apply bg-background text-text;
+  @apply bg-background text-text;
 
-	font-size: 16px;
-	font-family: Poppins, Montserrat, 'Segoe UI', Helvetica, 'Noto Sans Mongolian', sans-serif;
+  font-size: 16px;
+  font-family: Poppins, Montserrat, 'Segoe UI', Helvetica, 'Noto Sans Mongolian', sans-serif;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	min-height: 100vh;
+  min-height: 100vh;
 
-	width: 100vw;
-	max-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
 
-	overflow-x: hidden;
-	overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
-	@apply text-primary;
+  @apply text-primary;
 
-	text-decoration: none;
-	font-weight: medium;
+  text-decoration: none;
+  font-weight: medium;
 }
 
 a:visited {
-	@apply text-primary;
+  @apply text-primary;
 
-	font-weight: medium;
+  font-weight: medium;
 }
 
 img:not(.draggable) {
-	user-select: none;
-	-webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 [data-no-bullet] li {
-	list-style: none !important;
+  list-style: none !important;
 }
 
 li {
-	list-style-position: inside;
+  list-style-position: inside;
 }
 
 @media (max-width: 768px) {
-	.hide-mobile {
-		display: none;
-	}
+  .hide-mobile {
+    display: none;
+  }
 }
 
 h1 {
-	@apply text-3xl font-bold;
+  @apply text-3xl font-bold;
 }
 
 h2 {
-	@apply text-2xl font-bold;
+  @apply text-2xl font-bold;
 }
 
 h3 {
-	@apply text-xl font-bold;
+  @apply text-xl font-bold;
 }
