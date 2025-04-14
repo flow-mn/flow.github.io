@@ -3,7 +3,7 @@
   import Frame from './Frame.svelte';
 </script>
 
-<footer class="w-screen py-8 md:py-16">
+<footer class="shadow-footer w-screen bg-background py-8 md:py-16">
   <Frame>
     <div class="flex flex-col gap-8">
       <ul
@@ -72,9 +72,3 @@
     </div>
   </Frame>
 </footer>
-
-<style>
-  footer {
-    box-shadow: 0 -1px 6px 0px rgba(255, 255, 255, 0.1);
-  }
-</style>

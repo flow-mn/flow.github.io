@@ -3,17 +3,19 @@
 
   interface $Props {
     title: string;
+    icon: Snippet;
     children: Snippet;
   }
 
-  let { title, children }: $Props = $props();
+  let { title, children, icon }: $Props = $props();
 </script>
 
-<div class="gradient-border flex flex-col gap-4 rounded-lg px-4 py-3">
-  <div>
-    {title}
+<div class="gradient-border flex flex-col gap-2 rounded-lg px-4 py-3">
+  <div class="flex flex-row items-center justify-start gap-2 text-lg font-semibold">
+    {@render icon?.()}
+    <span>{title}</span>
   </div>
-  <div>
+  <div class="text-sm">
     {@render children()}
   </div>
 </div>
@@ -39,6 +41,6 @@
           rgba(242, 192, 255, 1) 100%
         )
         border-box;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
   }
 </style>
