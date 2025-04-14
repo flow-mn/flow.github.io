@@ -1,1 +1,0 @@
-import{o,E as p,p as f,q as i,t as c,k as d,v as h}from"./runtime.BtPMfzwl.js";function E(t,e,...n){var s=t,r=i,a;o(()=>{r!==(r=e())&&(a&&(c(a),a=null),a=f(()=>r(s,...n)))},p),d&&(s=h)}export{E as s};
