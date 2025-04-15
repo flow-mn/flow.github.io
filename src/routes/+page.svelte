@@ -18,7 +18,7 @@
 <div class="babalo right-[8vw] top-[80vh] animate-moveAroundC md:hidden"></div>
 
 <section class="flex flex-col items-center gap-10">
-  <div class="h-20"></div>
+  <div class="h-28"></div>
 
   <div data-aos="fade-right" class="text-3xl font-semibold max-md:text-center">
     Start tracking your finances.
@@ -36,7 +36,7 @@
 
   <FlexDownloadButtons />
 
-  <div class="h-20"></div>
+  <div class="h-28"></div>
 
   <div class="grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     <FeatureCard title="Free and open-source">
@@ -84,7 +84,7 @@
     </FeatureCard>
   </div>
 
-  <div class="h-20"></div>
+  <div class="h-28"></div>
 
   <div class="text-xs opacity-75">
     <p id="fna1">
