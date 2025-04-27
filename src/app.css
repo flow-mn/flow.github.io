@@ -12,7 +12,7 @@
 
 @layer components {
   .babalo {
-    @apply h-40 w-40 bg-primary opacity-60 blur-3xl absolute
+    @apply absolute h-40 w-40 bg-primary opacity-60 blur-3xl;
   }
 }
 

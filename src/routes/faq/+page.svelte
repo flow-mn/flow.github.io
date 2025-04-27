@@ -190,6 +190,10 @@
     <DocHeader id="can-i-add-recurring-transactions">Can I add recurring transactions?</DocHeader>
 
     <p>Recurring transactions feature is available on Flow 0.14.0 or later.</p>
+    
+    <DocHeader id="how-does-recurring-transactions-work">How does the recurring transactions work?</DocHeader>
+
+    <p>It's complicated.</p>
 
     <DocHeader id="how-does-icloud-sync-work">How does iCloud sync work?</DocHeader>
 

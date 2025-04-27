@@ -61,12 +61,18 @@
       Flow can work fully offline <Fna n="2" />
     </FeatureCard>
 
-    <FeatureCard title="iCloud sync">
+    <FeatureCard title="Recurring transactions">
+      {#snippet icon()}
+        🔁
+      {/snippet}
+      Easily manage your subscriptions, paychecks, and bills
+    </FeatureCard>
+    <!-- <FeatureCard title="iCloud sync">
       {#snippet icon()}
         ☁️
       {/snippet}
       Your can periodically sync your data to iCloud
-    </FeatureCard>
+    </FeatureCard> -->
 
     <FeatureCard title="Seamless UX">
       {#snippet icon()}
