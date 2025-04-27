@@ -10,7 +10,7 @@
 </script>
 
 <div class="gradient-border flex flex-col gap-4 rounded-lg px-4 py-3">
-  <div>
+  <div class="text-lg font-semibold">
     {title}
   </div>
   <div>
