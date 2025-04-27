@@ -10,6 +10,12 @@
   font-family: Poppins, Montserrat, 'Segoe UI', Helvetica, 'Noto Sans Mongolian', sans-serif;
 }
 
+@layer components {
+  .babalo {
+    @apply h-40 w-40 bg-primary opacity-60 blur-3xl absolute
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
