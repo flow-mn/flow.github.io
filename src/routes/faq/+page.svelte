@@ -81,7 +81,10 @@
     </ul>
 
     <DocHeader id="does-flow-have-online-sync">Does Flow have online sync?</DocHeader>
-    <details open>
+    <p>
+      No, but iCloud sync is to come soon. I recommend doing periodic backups to avoid data loss.
+    </p>
+    <!-- <details open>
       <summary> For users on Android, Windows, or Linux </summary>
       <p>
         It's not available at the moment. It's planned, and may take some time to be ready for use.
@@ -92,11 +95,11 @@
     <details open>
       <summary> For users on iOS, or macOS </summary>
       <p>
-        If you have Flow 0.14.0 or later on iOS, iPadOS, or macOS, you can use iCloud. This required
+        If you have Flow 0.15.0 or later on iOS, iPadOS, or macOS, you can use iCloud. This required
         iCloud Drive sync to be enabled on your device. This feature does not support multiple
         devices syncing. Flow will attempt to save your manual backups to your iCloud Drive too.
       </p>
-    </details>
+    </details> -->
 
     <DocHeader id="why-icloud-sync-isnt-working">Why iCloud sync isn't working?</DocHeader>
 
@@ -190,8 +193,10 @@
     <DocHeader id="can-i-add-recurring-transactions">Can I add recurring transactions?</DocHeader>
 
     <p>Recurring transactions feature is available on Flow 0.14.0 or later.</p>
-    
-    <DocHeader id="how-does-recurring-transactions-work">How does the recurring transactions work?</DocHeader>
+
+    <DocHeader id="how-does-recurring-transactions-work"
+      >How does the recurring transactions work?</DocHeader
+    >
 
     <p>It's complicated.</p>
 
