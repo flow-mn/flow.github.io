@@ -152,6 +152,36 @@
 
     <p>Yes. Requires Flow version 0.13.0 or later</p>
 
+    <DocHeader id="how-to-import-from-other-apps">How to import data from other apps?</DocHeader>
+
+    <details open>
+      <summary>Migrating from Ivy Wallet</summary>
+      <p>Export a CSV backup from Ivy Wallet, and choose "Ivy Wallet" option in the import menu.</p>
+    </details>
+    <details open>
+      <summary>Migrating from other apps</summary>
+      <div>
+        <ol class="list-inside list-decimal">
+          <li>Export your data as CSV, or any other Google Sheets/Excel compatible format</li>
+          <li>
+            <div class="inline-block">
+              Format your file to match Flow's CSV format.<br /><br />
+              <a
+                target="_blank"
+                referrerpolicy="no-referrer"
+                rel="noopener"
+                href="https://docs.google.com/spreadsheets/d/1wxdJ1T8PSvzayxvGs7bVyqQ9Zu0DPQ1YwiBLy1FluqE/edit?usp=sharing"
+                >View template on Google Sheets</a
+              >
+              <br />
+              Make sure you download the "Template" sheet
+            </div>
+          </li>
+          <li>Export the file as CSV.</li>
+        </ol>
+      </div>
+    </details>
+
     <DocHeader id="is-flow-free">Is Flow free?</DocHeader>
 
     <p>
@@ -237,5 +267,9 @@
 <style>
   p {
     @apply mt-2 max-w-prose;
+  }
+
+  details {
+    @apply mt-2;
   }
 </style>
