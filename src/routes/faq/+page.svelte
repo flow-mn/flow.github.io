@@ -37,7 +37,7 @@
 {/snippet}
 
 <section class="flex flex-col items-center justify-center gap-4">
-  <div class="flex max-w-screen-md flex-col">
+  <div class="flex max-w-(--breakpoint-md) flex-col [&_details]:mt-2 [&_p]:mt-2 [&_p]:max-w-prose">
     <h1 class="mb-8">Frequently Asked Questions</h1>
 
     <DocHeader id="what-is-flow">What is Flow?</DocHeader>
@@ -263,13 +263,3 @@
     </ul>
   </div>
 </section>
-
-<style>
-  p {
-    @apply mt-2 max-w-prose;
-  }
-
-  details {
-    @apply mt-2;
-  }
-</style>

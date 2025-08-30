@@ -3,14 +3,14 @@
   import Frame from './Frame.svelte';
 </script>
 
-<footer class="w-screen bg-background py-8 shadow-footer md:py-16">
+<footer class="bg-background shadow-footer w-screen py-8 md:py-16">
   <Frame>
     <div class="flex flex-col gap-8">
       <ul
         class="grid grid-cols-1 gap-x-40 gap-y-6 md:grid-cols-3 md:gap-y-16 xl:grid-cols-4"
         data-no-bullet
       >
-        <li data-aos="fade-right" data-aos-delay="200">
+        <li data-aos="fade-right" data-aos-delay="100">
           <ul>
             <Header>Community</Header>
             <li>
@@ -24,7 +24,7 @@
             </li>
           </ul>
         </li>
-        <li data-aos="fade-right" data-aos-delay="400">
+        <li data-aos="fade-right" data-aos-delay="200">
           <ul>
             <Header>Support</Header>
             <li>
@@ -38,7 +38,7 @@
             </li>
           </ul>
         </li>
-        <li data-aos="fade-right" data-aos-delay="600">
+        <li data-aos="fade-right" data-aos-delay="300">
           <ul>
             <Header>Contribute</Header>
             <li>
@@ -54,7 +54,7 @@
             </li>
           </ul>
         </li>
-        <li data-aos="fade-right" data-aos-delay="800">
+        <li data-aos="fade-right" data-aos-delay="400">
           <ul>
             <Header>Contact</Header>
             <li>

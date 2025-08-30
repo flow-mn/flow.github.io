@@ -10,12 +10,12 @@
 </svelte:head>
 
 <!-- md+ -->
-<div class="babalo left-[25vw] top-[25vh] hidden animate-moveAroundA md:block"></div>
-<div class="babalo right-[20vw] top-[10vh] hidden animate-moveAroundB md:block"></div>
-<div class="babalo right-[15vw] top-[80vh] hidden animate-moveAroundC md:block"></div>
+<div class="babalo left-[25vw] top-[25vh] hidden animate-move-around-a md:block"></div>
+<div class="babalo right-[20vw] top-[10vh] hidden animate-move-around-b md:block"></div>
+<div class="babalo right-[15vw] top-[80vh] hidden animate-move-around-c md:block"></div>
 <!-- mobile -->
-<div class="babalo left-[-1vw] top-[10vh] animate-moveAroundA md:hidden"></div>
-<div class="babalo right-[8vw] top-[80vh] animate-moveAroundC md:hidden"></div>
+<div class="babalo left-[-1vw] top-[10vh] animate-move-around-a md:hidden"></div>
+<div class="babalo right-[8vw] top-[80vh] animate-move-around-c md:hidden"></div>
 
 <section class="flex flex-col items-center gap-10">
   <div class="h-28"></div>

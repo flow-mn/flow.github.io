@@ -2,7 +2,7 @@
   let { fill = '#ffffff' }: { fill?: string } = $props();
 </script>
 
-<div class="inline-block align-middle">
+<div class="inline-block align-middle *:h-[1em] *:w-[1.02em]">
   <svg width="98" height="96" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg"
     ><path
       fill-rule="evenodd"
@@ -12,14 +12,3 @@
     /></svg
   >
 </div>
-
-<style>
-  div {
-    font-size: 1em;
-  }
-
-  svg {
-    width: 1.02em;
-    height: 1em;
-  }
-</style>

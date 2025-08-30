@@ -1,4 +1,5 @@
 <script lang="ts">
+  import clsx from 'clsx';
   import type { Snippet } from 'svelte';
 
   interface $Props {
@@ -11,25 +12,13 @@
 </script>
 
 <div class="flex w-screen flex-row justify-center overflow-x-hidden">
-  <section class:fullHeight class:padMobile>
+  <section
+    class:padMobile
+    class={clsx('w-full max-w-(--breakpoint-xl,100vw)', {
+      'xl:p-5': padMobile,
+      'min-h-[80vh]': fullHeight
+    })}
+  >
     {@render children()}
   </section>
 </div>
-
-<style>
-  section {
-    max-width: 1280px;
-    max-width: min(1280px, 100vw);
-    width: 100%;
-  }
-
-  .fullHeight {
-    min-height: 80vh;
-  }
-
-  @media only screen and (max-width: 1280px) {
-    section.padMobile {
-      padding: 0 1.25rem;
-    }
-  }
-</style>
