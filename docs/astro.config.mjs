@@ -30,5 +30,6 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-	base: '/docs'
+	base: '/docs',
+	outDir: '../build/docs'
 });
