@@ -5,14 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev --open",
-    "build": "vite build",
+    "build": "vite build && pnpm build --prefix docs",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
-    "lint": "prettier --check . && eslint .",
-    "gh-pages": "pnpm run build && pnpx gh-pages -d build -t",
-    "gh-pages-actions": "pnpm run build && pnpx gh-pages -d build -t -u \"github-actions-bot <support+actions@github.com>\""
+    "lint": "prettier --check . && eslint ."
   },
   "devDependencies": {
     "@eslint/compat": "^1.3.2",
