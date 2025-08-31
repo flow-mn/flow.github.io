@@ -3,9 +3,10 @@ title: Setting up Flow
 description: How to setup Flow?
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+## 1. Install Flow if you haven't already
 
-## Further reading
+## 2. Select your setup journey
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+If you haven't used Flow before, choose "Start Fresh"
+
+![Flow setup selection](../../../assets/en/images/setup/start-journey-selection.png)
