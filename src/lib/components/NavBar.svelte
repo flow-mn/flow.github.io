@@ -1,81 +1,35 @@
 <script>
   import Frame from './Frame.svelte';
   import GitHubOctocat from './GitHubOctocat.svelte';
-  import { afterNavigate } from '$app/navigation';
   import Logo from './Logo.svelte';
-
-  let path = $state(window.location.pathname);
-
-  afterNavigate(() => {
-    path = window.location.pathname;
-  });
+  import Item from './NavBar/Item.svelte';
 </script>
 
-<nav class="fixed left-0 right-0 top-0 z-50 bg-background shadow-sm">
+<nav class="bg-background fixed top-0 right-0 left-0 z-50 shadow-xs">
   <Frame>
-    <ul class="flex h-[var(--navbar-height,4rem)] w-full flex-row items-center gap-8 font-semibold">
+    <ul
+      class="flex h-(--navbar-height,4rem) w-full flex-row items-center gap-1.5 font-semibold *:list-none *:before:content-['']! md:gap-8"
+    >
       <li>
         <a href="/" class="inline-flex flex-row items-center gap-1.5">
           <Logo />
         </a>
       </li>
-      <li class="spacer"></li>
+      <li class="spacer w-full flex-1"></li>
       <li>
-        <a href="/donate" class:active={path === '/donate'}>Donate 🤍</a>
+        <Item href="/donate">Donate 🤍</Item>
       </li>
       <li>
-        <a href="/faq" class:active={path === '/faq'}>FAQ</a>
+        <Item href="/faq">FAQ</Item>
       </li>
       <li>
-        <a
-          href="https://github.com/flow-mn/flow"
-          target="_blank"
-          class="inline-flex flex-row items-center gap-2"
-        >
-          <GitHubOctocat />
-          <span class="hidden md:block">GitHub</span>
-        </a>
+        <Item href="https://github.com/flow-mn/flow" target="_blank">
+          <div class="inline-flex flex-row items-center gap-2">
+            <GitHubOctocat />
+            <span class="hidden md:block">GitHub</span>
+          </div>
+        </Item>
       </li>
     </ul>
   </Frame>
 </nav>
-
-<style>
-  :global(:root) {
-    --navbar-height: 4rem;
-  }
-
-  ul,
-  li {
-    list-style: none;
-  }
-
-  li::before {
-    content: '' !important;
-  }
-
-  a,
-  a:visited {
-    @apply text-text;
-  }
-
-  a:hover,
-  a:focus-visible {
-    @apply text-primary;
-  }
-
-  .spacer {
-    width: 100%;
-    flex: 1 1 0;
-  }
-
-  .active {
-    @apply !text-primary;
-  }
-
-  @media only screen and (max-width: 768px) {
-    ul {
-      gap: 1.5rem;
-    }
-  }
-</style>

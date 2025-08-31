@@ -1,4 +1,4 @@
-<div>
+<div class="inline-block align-middle *:h-[1em] *:w-[1em]">
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
     ><path
       fill="#5865F2"
@@ -6,16 +6,3 @@
     /></svg
   >
 </div>
-
-<style>
-  div {
-    display: inline-block;
-    font-size: 1em;
-    vertical-align: middle;
-  }
-
-  svg {
-    height: 1em;
-    width: 1em;
-  }
-</style>

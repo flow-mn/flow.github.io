@@ -14,7 +14,7 @@
 
 <NavBar />
 <Frame fullHeight>
-  <main class="flex w-full flex-col pb-16 pt-8">
+  <main class="mt-(--navbar-height,0px) flex w-full flex-col pt-8 pb-16">
     {@render children()}
   </main>
 </Frame>
@@ -26,9 +26,5 @@
     background-repeat: repeat;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  }
-
-  main {
-    margin-top: var(--navbar-height, 0px);
   }
 </style>
