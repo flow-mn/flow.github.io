@@ -1,4 +1,7 @@
-/_astro/*
+/docs/_astro/*
   Cache-Control: public
   Cache-Control: max-age=604800
   Cache-Control: immutable
+
+/*
+  X-Frame-Options: DENY
