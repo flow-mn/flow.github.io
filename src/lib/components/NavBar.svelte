@@ -5,7 +5,7 @@
   import Item from './NavBar/Item.svelte';
 </script>
 
-<nav class="bg-background fixed top-0 right-0 left-0 z-50 shadow-xs">
+<nav class="fixed top-0 right-0 left-0 z-50 bg-background shadow-xs">
   <Frame>
     <ul
       class="flex h-(--navbar-height,4rem) w-full flex-row items-center gap-1.5 font-semibold *:list-none *:before:content-['']! md:gap-8"

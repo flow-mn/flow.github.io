@@ -10,12 +10,12 @@
 </svelte:head>
 
 <!-- md+ -->
-<div class="babalo left-[25vw] top-[25vh] hidden animate-move-around-a md:block"></div>
-<div class="babalo right-[20vw] top-[10vh] hidden animate-move-around-b md:block"></div>
-<div class="babalo right-[15vw] top-[80vh] hidden animate-move-around-c md:block"></div>
+<div class="babalo top-[25vh] left-[25vw] hidden animate-move-around-a md:block"></div>
+<div class="babalo top-[10vh] right-[20vw] hidden animate-move-around-b md:block"></div>
+<div class="babalo top-[80vh] right-[15vw] hidden animate-move-around-c md:block"></div>
 <!-- mobile -->
-<div class="babalo left-[-1vw] top-[10vh] animate-move-around-a md:hidden"></div>
-<div class="babalo right-[8vw] top-[80vh] animate-move-around-c md:hidden"></div>
+<div class="babalo top-[10vh] left-[-1vw] animate-move-around-a md:hidden"></div>
+<div class="babalo top-[80vh] right-[8vw] animate-move-around-c md:hidden"></div>
 
 <section class="flex flex-col items-center gap-10">
   <div class="h-28"></div>
@@ -50,15 +50,7 @@
       {#snippet icon()}
         🔐
       {/snippet}
-      You are in control of your data
-      <Fna n="1" />
-    </FeatureCard>
-
-    <FeatureCard title="Offline">
-      {#snippet icon()}
-        ⚡️
-      {/snippet}
-      Flow can work fully offline <Fna n="2" />
+      Flow is offline<Fna n="1" />, and you control where your data goes<Fna n="2" />.
     </FeatureCard>
 
     <FeatureCard title="Recurring transactions">
@@ -67,12 +59,13 @@
       {/snippet}
       Easily manage your subscriptions, paychecks, and bills
     </FeatureCard>
-    <!-- <FeatureCard title="iCloud sync">
+
+    <FeatureCard title="iCloud backup">
       {#snippet icon()}
         ☁️
       {/snippet}
-      Your can periodically sync your data to iCloud
-    </FeatureCard> -->
+      Your can periodically backup your data to iCloud
+    </FeatureCard>
 
     <FeatureCard title="Seamless UX">
       {#snippet icon()}
@@ -94,15 +87,15 @@
 
   <div class="text-xs opacity-75">
     <p id="fna1">
-      <span class="font-mono">[1]</span> - If you use older Android devices, or devices with Windows,
-      or Linux-based operating systems, Flow may store your data, and backups in a easily accessible
-      place. Make sure your device and system supports containerized storage, or other type of external
-      access protection as you are responsible for your financial data.
+      <span class="font-mono">[1]</span> - Flow may need internet to fetch exchange rates if you use
+      more than one currency.
     </p>
     <br />
     <p id="fna2">
-      <span class="font-mono">[2]</span> - Flow may need internet to fetch exchange rates if you use
-      more than one currency.
+      <span class="font-mono">[2]</span> - If you use older Android devices, or devices with Windows,
+      or Linux-based operating systems, Flow may store your data, and backups in a easily accessible
+      place. Make sure your device and system supports containerized storage, or other type of external
+      access protection as you are responsible for your financial data.
     </p>
   </div>
 </section>
